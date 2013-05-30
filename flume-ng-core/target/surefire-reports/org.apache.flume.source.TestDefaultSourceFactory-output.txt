@@ -1,0 +1,11 @@
+2013-05-09 16:01:45,042 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source avroSource1, type avro
+2013-05-09 16:01:45,059 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source avroSource2, type avro
+2013-05-09 16:01:45,059 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source avroSource1, type avro
+2013-05-09 16:01:45,059 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source avroSource2, type avro
+2013-05-09 16:01:45,072 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source seq-src, type seq
+2013-05-09 16:01:45,074 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source netcat-src, type netcat
+2013-05-09 16:01:45,076 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source exec-src, type exec
+2013-05-09 16:01:45,077 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source avro-src, type avro
+2013-05-09 16:01:45,087 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source custom-src, type org.apache.flume.source.MockSource
+2013-05-09 16:01:45,088 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:82)] Source type org.apache.flume.source.MockSource is a custom type
+2013-05-09 16:01:45,088 (main) [DEBUG - org.apache.flume.source.DefaultSourceFactory.create(DefaultSourceFactory.java:74)] Creating instance of source s1, type avro

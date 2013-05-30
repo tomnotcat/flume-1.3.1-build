@@ -1,0 +1,4 @@
+2013-05-09 16:01:22,329 (main) [INFO - org.apache.flume.interceptor.StaticInterceptor$Builder.build(StaticInterceptor.java:133)] Creating StaticInterceptor: preserveExisting=true,key=key,value=value
+2013-05-09 16:01:22,340 (main) [INFO - org.apache.flume.interceptor.StaticInterceptor$Builder.build(StaticInterceptor.java:133)] Creating StaticInterceptor: preserveExisting=true,key=myKey,value=myVal
+2013-05-09 16:01:22,341 (main) [INFO - org.apache.flume.interceptor.StaticInterceptor$Builder.build(StaticInterceptor.java:133)] Creating StaticInterceptor: preserveExisting=false,key=key,value=replacement value
+2013-05-09 16:01:22,342 (main) [INFO - org.apache.flume.interceptor.StaticInterceptor$Builder.build(StaticInterceptor.java:133)] Creating StaticInterceptor: preserveExisting=true,key=key,value=replacement value

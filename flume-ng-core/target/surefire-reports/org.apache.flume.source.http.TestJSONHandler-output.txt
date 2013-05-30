@@ -1,0 +1,1 @@
+2013-05-09 16:01:37,245 (main) [ERROR - org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:104)] Unsupported character set in request ISO-8859-1. JSON handler supports UTF-8, UTF-16 and UTF-32 only.

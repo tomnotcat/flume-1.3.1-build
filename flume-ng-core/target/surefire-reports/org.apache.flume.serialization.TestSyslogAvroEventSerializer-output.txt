@@ -1,0 +1,8 @@
+2013-05-09 16:00:35,822 (main) [DEBUG - org.apache.flume.serialization.EventSerializerFactory.getInstance(EventSerializerFactory.java:44)] Not in enum, loading builder class: org.apache.flume.serialization.SyslogAvroEventSerializer$Builder
+2013-05-09 16:00:36,311 (main) [DEBUG - org.apache.flume.serialization.SyslogAvroEventSerializer.parseRfc3164Date(SyslogAvroEventSerializer.java:171)] Date parse failed on (Apr  7 01:00:00), trying single-digit date
+2013-05-09 16:00:36,314 (main) [DEBUG - org.apache.flume.serialization.SyslogAvroEventSerializer.convert(SyslogAvroEventSerializer.java:150)] Serialized event as: { Facility: 1,  Severity: 2,  Timestamp: 1396832400000,  Hostname: host,  Message: "Msg 01" }
+2013-05-09 16:00:36,324 (main) [DEBUG - org.apache.flume.serialization.SyslogAvroEventSerializer.convert(SyslogAvroEventSerializer.java:150)] Serialized event as: { Facility: 1,  Severity: 3,  Timestamp: 1366592400000,  Hostname: host,  Message: "Msg 02" }
+2013-05-09 16:00:36,324 (main) [DEBUG - org.apache.flume.serialization.SyslogAvroEventSerializer.convert(SyslogAvroEventSerializer.java:150)] Serialized event as: { Facility: 1,  Severity: 0,  Timestamp: 1366592400000,  Hostname: host,  Message: "Msg 03" }
+1396832400000: Msg 01
+1366592400000: Msg 02
+1366592400000: Msg 03

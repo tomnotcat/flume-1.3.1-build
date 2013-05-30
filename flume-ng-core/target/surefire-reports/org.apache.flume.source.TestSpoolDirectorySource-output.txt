@@ -1,0 +1,59 @@
+2013-05-09 16:01:24,025 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484015-0
+2013-05-09 16:01:24,047 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,061 (pool-1-thread-1) [INFO - org.apache.flume.client.avro.SpoolingFileLineReader.retireCurrentFile(SpoolingFileLineReader.java:229)] Preparing to move file /tmp/1368086484015-0/file1 to /tmp/1368086484015-0/file1.COMPLETED
+2013-05-09 16:01:24,557 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,560 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,565 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,565 (pool-2-thread-1) [INFO - org.apache.flume.client.avro.SpoolingFileLineReader.retireCurrentFile(SpoolingFileLineReader.java:229)] Preparing to move file /tmp/1368086484557-0/file1 to /tmp/1368086484557-0/file1.COMPLETED
+2013-05-09 16:01:24,565 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,565 (pool-1-thread-1) [ERROR - org.apache.flume.source.SpoolDirectorySource$SpoolDirectoryRunnable.run(SpoolDirectorySource.java:148)] Uncaught exception in Runnable
+java.lang.NullPointerException
+	at java.util.Arrays$ArrayList.<init>(Arrays.java:3369)
+	at java.util.Arrays.asList(Arrays.java:3355)
+	at org.apache.flume.client.avro.SpoolingFileLineReader.getNextFile(SpoolingFileLineReader.java:303)
+	at org.apache.flume.client.avro.SpoolingFileLineReader.readLines(SpoolingFileLineReader.java:172)
+	at org.apache.flume.source.SpoolDirectorySource$SpoolDirectoryRunnable.run(SpoolDirectorySource.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:351)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:165)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:267)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:24,567 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,576 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,577 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,578 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,579 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,581 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,582 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,588 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,588 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,589 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,589 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,589 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,590 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,590 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,591 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,591 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,591 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,592 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,593 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,593 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,593 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,594 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,595 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,595 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,595 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,596 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,596 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,597 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,597 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,603 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,604 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,605 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms
+2013-05-09 16:01:24,606 (main) [INFO - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:64)] SpoolDirectorySource source starting with directory:/tmp/1368086484557-0
+2013-05-09 16:01:24,608 (main) [DEBUG - org.apache.flume.source.SpoolDirectorySource.start(SpoolDirectorySource.java:79)] SpoolDirectorySource source started
+2013-05-09 16:01:24,609 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:START} up to 0ms
+2013-05-09 16:01:24,609 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:org.apache.flume.source.SpoolDirectorySource{name:null,state:STOP} up to 0ms

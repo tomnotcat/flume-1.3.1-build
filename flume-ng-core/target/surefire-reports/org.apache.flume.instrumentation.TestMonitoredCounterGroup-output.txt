@@ -1,0 +1,12 @@
+2013-05-09 16:00:27,743 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: SINK, name: random-24143087200772, registered successfully.
+2013-05-09 16:00:27,759 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: random-24143087200772 started
+2013-05-09 16:00:27,763 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SINK, name: random-24143087200772 stopped
+2013-05-09 16:00:27,769 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: random-24143087200772 started
+2013-05-09 16:00:27,779 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: random-24143215908344, registered successfully.
+2013-05-09 16:00:27,780 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: random-24143215908344 started
+2013-05-09 16:00:27,783 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: random-24143215908344 stopped
+2013-05-09 16:00:27,790 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: random-24143215908344 started
+2013-05-09 16:00:27,806 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: SOURCE, name: random-24143235332347, registered successfully.
+2013-05-09 16:00:27,808 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SOURCE, name: random-24143235332347 started
+2013-05-09 16:00:27,815 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SOURCE, name: random-24143235332347 stopped
+2013-05-09 16:00:27,821 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SOURCE, name: random-24143235332347 started

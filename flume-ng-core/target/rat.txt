@@ -1,0 +1,226 @@
+
+*****************************************************
+Summary
+-------
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 190
+
+Apache Licensed: 190
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    src/main/java/org/apache/flume/ChannelSelector.java
+  AL    src/main/java/org/apache/flume/SystemClock.java
+  AL    src/main/java/org/apache/flume/CounterGroup.java
+  AL    src/main/java/org/apache/flume/channel/ChannelSelectorFactory.java
+  AL    src/main/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java
+  AL    src/main/java/org/apache/flume/channel/AbstractChannelSelector.java
+  AL    src/main/java/org/apache/flume/channel/MemoryChannel.java
+  AL    src/main/java/org/apache/flume/channel/ChannelProcessor.java
+  AL    src/main/java/org/apache/flume/channel/BasicChannelSemantics.java
+  AL    src/main/java/org/apache/flume/channel/AbstractChannel.java
+  AL    src/main/java/org/apache/flume/channel/ChannelUtils.java
+  AL    src/main/java/org/apache/flume/channel/MultiplexingChannelSelector.java
+  AL    src/main/java/org/apache/flume/channel/ReplicatingChannelSelector.java
+  AL    src/main/java/org/apache/flume/channel/BasicTransactionSemantics.java
+  AL    src/main/java/org/apache/flume/channel/DefaultChannelFactory.java
+  AL    src/main/java/org/apache/flume/Transaction.java
+  AL    src/main/java/org/apache/flume/instrumentation/ChannelCounterMBean.java
+  AL    src/main/java/org/apache/flume/instrumentation/MonitoringType.java
+  AL    src/main/java/org/apache/flume/instrumentation/http/HTTPMetricsServer.java
+  AL    src/main/java/org/apache/flume/instrumentation/ChannelCounter.java
+  AL    src/main/java/org/apache/flume/instrumentation/SourceCounterMBean.java
+  AL    src/main/java/org/apache/flume/instrumentation/ChannelProcessorCounter.java
+  AL    src/main/java/org/apache/flume/instrumentation/MonitorService.java
+  AL    src/main/java/org/apache/flume/instrumentation/SourceCounter.java
+  AL    src/main/java/org/apache/flume/instrumentation/SinkProcessorCounter.java
+  AL    src/main/java/org/apache/flume/instrumentation/GangliaServer.java
+  AL    src/main/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java
+  AL    src/main/java/org/apache/flume/instrumentation/SinkCounterMBean.java
+  AL    src/main/java/org/apache/flume/instrumentation/SinkCounter.java
+  AL    src/main/java/org/apache/flume/instrumentation/util/JMXPollUtil.java
+  AL    src/main/java/org/apache/flume/Constants.java
+  AL    src/main/java/org/apache/flume/SourceFactory.java
+  AL    src/main/java/org/apache/flume/NamedComponent.java
+  AL    src/main/java/org/apache/flume/Sink.java
+  AL    src/main/java/org/apache/flume/serialization/BodyTextEventSerializer.java
+  AL    src/main/java/org/apache/flume/serialization/AvroEventSerializerConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/serialization/EventSerializer.java
+  AL    src/main/java/org/apache/flume/serialization/FlumeEventAvroEventSerializer.java
+  AL    src/main/java/org/apache/flume/serialization/EventSerializerFactory.java
+  AL    src/main/java/org/apache/flume/serialization/EventSerializerType.java
+  AL    src/main/java/org/apache/flume/serialization/AbstractAvroEventSerializer.java
+  AL    src/main/java/org/apache/flume/sink/RollingFileSink.java
+  AL    src/main/java/org/apache/flume/sink/LoggerSink.java
+  AL    src/main/java/org/apache/flume/sink/AbstractSinkProcessor.java
+  AL    src/main/java/org/apache/flume/sink/NullSink.java
+  AL    src/main/java/org/apache/flume/sink/SinkProcessorFactory.java
+  AL    src/main/java/org/apache/flume/sink/DefaultSinkFactory.java
+  AL    src/main/java/org/apache/flume/sink/DefaultSinkProcessor.java
+  AL    src/main/java/org/apache/flume/sink/FlumeFormatter.java
+  AL    src/main/java/org/apache/flume/sink/AbstractSinkSelector.java
+  AL    src/main/java/org/apache/flume/sink/AbstractSink.java
+  AL    src/main/java/org/apache/flume/sink/AvroSink.java
+  AL    src/main/java/org/apache/flume/sink/SinkGroup.java
+  AL    src/main/java/org/apache/flume/sink/FailoverSinkProcessor.java
+  AL    src/main/java/org/apache/flume/sink/LoadBalancingSinkProcessor.java
+  AL    src/main/java/org/apache/flume/ChannelFactory.java
+  AL    src/main/java/org/apache/flume/interceptor/InterceptorType.java
+  AL    src/main/java/org/apache/flume/interceptor/Interceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/StaticInterceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/InterceptorChain.java
+  AL    src/main/java/org/apache/flume/interceptor/RegexExtractorInterceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/RegexExtractorInterceptorPassThroughSerializer.java
+  AL    src/main/java/org/apache/flume/interceptor/RegexExtractorInterceptorMillisSerializer.java
+  AL    src/main/java/org/apache/flume/interceptor/RegexExtractorInterceptorSerializer.java
+  AL    src/main/java/org/apache/flume/interceptor/RegexFilteringInterceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/TimestampInterceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/HostInterceptor.java
+  AL    src/main/java/org/apache/flume/interceptor/InterceptorBuilderFactory.java
+  AL    src/main/java/org/apache/flume/source/AbstractSource.java
+  AL    src/main/java/org/apache/flume/source/SyslogParser.java
+  AL    src/main/java/org/apache/flume/source/DefaultSourceFactory.java
+  AL    src/main/java/org/apache/flume/source/AvroSource.java
+  AL    src/main/java/org/apache/flume/source/SequenceGeneratorSource.java
+  AL    src/main/java/org/apache/flume/source/http/JSONHandler.java
+  AL    src/main/java/org/apache/flume/source/http/HTTPSourceConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/source/http/HTTPSource.java
+  AL    src/main/java/org/apache/flume/source/http/HTTPBadRequestException.java
+  AL    src/main/java/org/apache/flume/source/http/HTTPSourceHandler.java
+  AL    src/main/java/org/apache/flume/source/SpoolDirectorySourceConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/source/SyslogUtils.java
+  AL    src/main/java/org/apache/flume/source/StressSource.java
+  AL    src/main/java/org/apache/flume/source/ExecSourceConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/source/MultiportSyslogTCPSource.java
+  AL    src/main/java/org/apache/flume/source/NetcatSource.java
+  AL    src/main/java/org/apache/flume/source/SyslogUDPSource.java
+  AL    src/main/java/org/apache/flume/source/NetcatSourceConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/source/EventDrivenSourceRunner.java
+  AL    src/main/java/org/apache/flume/source/SyslogSourceConfigurationConstants.java
+  AL    src/main/java/org/apache/flume/source/ExecSource.java
+  AL    src/main/java/org/apache/flume/source/SyslogTcpSource.java
+  AL    src/main/java/org/apache/flume/source/PollableSourceRunner.java
+  AL    src/main/java/org/apache/flume/source/SpoolDirectorySource.java
+  AL    src/main/java/org/apache/flume/conf/Configurable.java
+  AL    src/main/java/org/apache/flume/conf/ConfigurableComponent.java
+  AL    src/main/java/org/apache/flume/conf/Configurables.java
+  AL    src/main/java/org/apache/flume/ChannelException.java
+  AL    src/main/java/org/apache/flume/EventDrivenSource.java
+  AL    src/main/java/org/apache/flume/event/EventHelper.java
+  AL    src/main/java/org/apache/flume/SinkProcessor.java
+  AL    src/main/java/org/apache/flume/client/avro/LineReader.java
+  AL    src/main/java/org/apache/flume/client/avro/AvroCLIClient.java
+  AL    src/main/java/org/apache/flume/client/avro/SpoolingFileLineReader.java
+  AL    src/main/java/org/apache/flume/client/avro/BufferedLineReader.java
+  AL    src/main/java/org/apache/flume/Channel.java
+  AL    src/main/java/org/apache/flume/annotations/InterfaceAudience.java
+  AL    src/main/java/org/apache/flume/annotations/InterfaceStability.java
+  AL    src/main/java/org/apache/flume/lifecycle/LifecycleAware.java
+  AL    src/main/java/org/apache/flume/lifecycle/LifecycleSupervisor.java
+  AL    src/main/java/org/apache/flume/lifecycle/LifecycleController.java
+  AL    src/main/java/org/apache/flume/lifecycle/LifecycleState.java
+  AL    src/main/java/org/apache/flume/lifecycle/LifecycleException.java
+  AL    src/main/java/org/apache/flume/PollableSource.java
+  AL    src/main/java/org/apache/flume/VersionAnnotation.java
+  AL    src/main/java/org/apache/flume/formatter/output/TextDelimitedOutputFormatter.java
+  AL    src/main/java/org/apache/flume/formatter/output/BucketPath.java
+  AL    src/main/java/org/apache/flume/formatter/output/EventFormatter.java
+  AL    src/main/java/org/apache/flume/formatter/output/PathManager.java
+  AL    src/main/java/org/apache/flume/SinkRunner.java
+  AL    src/main/java/org/apache/flume/Source.java
+  AL    src/main/java/org/apache/flume/Clock.java
+  AL    src/main/java/org/apache/flume/tools/TimestampRoundDownUtil.java
+  AL    src/main/java/org/apache/flume/tools/DirectMemoryUtils.java
+  AL    src/main/java/org/apache/flume/tools/GetJavaProperty.java
+  AL    src/main/java/org/apache/flume/tools/VersionInfo.java
+  AL    src/main/java/org/apache/flume/SinkFactory.java
+  AL    src/main/java/org/apache/flume/SourceRunner.java
+  AL    src/test/resources/log4j.properties
+  AL    src/test/java/org/apache/flume/channel/MockEvent.java
+  AL    src/test/java/org/apache/flume/channel/TestMemoryChannelConcurrency.java
+  AL    src/test/java/org/apache/flume/channel/AbstractBasicChannelSemanticsTest.java
+  AL    src/test/java/org/apache/flume/channel/TestReplicatingChannelSelector.java
+  AL    src/test/java/org/apache/flume/channel/TestMemoryChannel.java
+  AL    src/test/java/org/apache/flume/channel/MockChannel.java
+  AL    src/test/java/org/apache/flume/channel/TestChannelProcessor.java
+  AL    src/test/java/org/apache/flume/channel/TestMultiplexingChannelSelector.java
+  AL    src/test/java/org/apache/flume/channel/TestBasicChannelSemantics.java
+  AL    src/test/java/org/apache/flume/channel/TestMemoryChannelTransaction.java
+  AL    src/test/java/org/apache/flume/channel/TestChannelUtils.java
+  AL    src/test/java/org/apache/flume/TestCounterGroup.java
+  AL    src/test/java/org/apache/flume/instrumentation/http/TestHTTPMetricsServer.java
+  AL    src/test/java/org/apache/flume/instrumentation/TestMonitoredCounterGroup.java
+  AL    src/test/java/org/apache/flume/instrumentation/util/TestJMXPollUtil.java
+  AL    src/test/java/org/apache/flume/instrumentation/util/JMXTestUtils.java
+  AL    src/test/java/org/apache/flume/serialization/TestSyslogAvroEventSerializer.java
+  AL    src/test/java/org/apache/flume/serialization/TestFlumeEventAvroEventSerializer.java
+  AL    src/test/java/org/apache/flume/serialization/SyslogAvroEventSerializer.java
+  AL    src/test/java/org/apache/flume/serialization/TestBodyTextEventSerializer.java
+  AL    src/test/java/org/apache/flume/sink/SinkProcessorFactoryTest.java
+  AL    src/test/java/org/apache/flume/sink/TestDefaultSinkFactory.java
+  AL    src/test/java/org/apache/flume/sink/TestLoadBalancingSinkProcessor.java
+  AL    src/test/java/org/apache/flume/sink/TestAvroSink.java
+  AL    src/test/java/org/apache/flume/sink/TestLoggerSink.java
+  AL    src/test/java/org/apache/flume/sink/FixedOrderSelector.java
+  AL    src/test/java/org/apache/flume/sink/TestRollingFileSink.java
+  AL    src/test/java/org/apache/flume/sink/TestFailoverSinkProcessor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestStaticInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/CensoringInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestRegexExtractorInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestRegexFilteringInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestCensoringInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestTimestampInterceptor.java
+  AL    src/test/java/org/apache/flume/interceptor/TestRegexExtractorInterceptorPassThroughSerializer.java
+  AL    src/test/java/org/apache/flume/interceptor/TestRegexExtractorInterceptorMillisSerializer.java
+  AL    src/test/java/org/apache/flume/interceptor/TestHostInterceptor.java
+  AL    src/test/java/org/apache/flume/source/http/TestHTTPSource.java
+  AL    src/test/java/org/apache/flume/source/http/FlumeHttpServletRequestWrapper.java
+  AL    src/test/java/org/apache/flume/source/http/TestJSONHandler.java
+  AL    src/test/java/org/apache/flume/source/TestPollableSourceRunner.java
+  AL    src/test/java/org/apache/flume/source/MockSource.java
+  AL    src/test/java/org/apache/flume/source/TestSyslogUdpSource.java
+  AL    src/test/java/org/apache/flume/source/TestSequenceGeneratorSource.java
+  AL    src/test/java/org/apache/flume/source/TestExecSource.java
+  AL    src/test/java/org/apache/flume/source/TestSpoolDirectorySource.java
+  AL    src/test/java/org/apache/flume/source/TestSyslogParser.java
+  AL    src/test/java/org/apache/flume/source/TestMultiportSyslogTCPSource.java
+  AL    src/test/java/org/apache/flume/source/TestAvroSource.java
+  AL    src/test/java/org/apache/flume/source/TestStressSource.java
+  AL    src/test/java/org/apache/flume/source/TestDefaultSourceFactory.java
+  AL    src/test/java/org/apache/flume/source/TestSyslogUtils.java
+  AL    src/test/java/org/apache/flume/TestContext.java
+  AL    src/test/java/org/apache/flume/event/TestEventHelper.java
+  AL    src/test/java/org/apache/flume/client/avro/TestSpoolingFileLineReader.java
+  AL    src/test/java/org/apache/flume/client/avro/TestBufferedLineReader.java
+  AL    src/test/java/org/apache/flume/lifecycle/TestLifecycleController.java
+  AL    src/test/java/org/apache/flume/lifecycle/TestLifecycleSupervisor.java
+  AL    src/test/java/org/apache/flume/formatter/output/TestBucketPath.java
+  AL    src/test/java/org/apache/flume/tools/TestVersionInfo.java
+  AL    src/test/java/org/apache/flume/tools/TestTimestampRoundDownUtil.java
+  AL    scripts/saveVersion.sh
+  AL    pom.xml
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 

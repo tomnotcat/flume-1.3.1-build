@@ -1,0 +1,433 @@
+2013-05-09 16:00:38,550 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:239)] Starting AvroSink null { host: 127.0.0.1, port: 41414 }...
+2013-05-09 16:00:38,606 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: SINK, name: null, registered successfully.
+2013-05-09 16:00:38,607 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: null started
+2013-05-09 16:00:38,607 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:38,614 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:38,647 (pool-1-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:38,653 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:38,653 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41809
+2013-05-09 16:00:38,671 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:38,671 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:253)] Avro sink null started.
+2013-05-09 16:00:38,679 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:38,679 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:258)] Avro sink null stopping...
+2013-05-09 16:00:38,680 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:38,684 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:38,684 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:38,685 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00a23610, /127.0.0.1:41809 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:38,688 (pool-2-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41809 disconnected.
+2013-05-09 16:00:38,687 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SINK, name: null stopped
+2013-05-09 16:00:38,690 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:264)] Avro sink null stopped. Metrics: SINK:null{sink.connection.closed.count=1, sink.event.drain.attempt=0, sink.batch.underflow=0, sink.connection.failed.count=0, sink.connection.creation.count=1, sink.event.drain.sucess=0, sink.batch.empty=0, sink.batch.complete=0}
+2013-05-09 16:00:38,691 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:38,718 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:239)] Starting AvroSink null { host: 127.0.0.1, port: 41414 }...
+2013-05-09 16:00:38,721 (main) [ERROR - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:92)] Failed to register monitored counter group for type: SINK, name: null
+javax.management.InstanceAlreadyExistsException: org.apache.flume.sink:type=null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:467)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.internal_addObject(DefaultMBeanServerInterceptor.java:1520)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:986)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:938)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:330)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:517)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:87)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:67)
+	at org.apache.flume.sink.AvroSink.start(AvroSink.java:240)
+	at org.apache.flume.sink.TestAvroSink.testProcess(TestAvroSink.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+2013-05-09 16:00:38,725 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: null started
+2013-05-09 16:00:38,725 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:38,725 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:38,727 (pool-3-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:38,728 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:38,728 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41810
+2013-05-09 16:00:38,730 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:38,731 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:253)] Avro sink null started.
+2013-05-09 16:00:38,731 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:38,815 (pool-4-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:38,823 (pool-4-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:38,826 (pool-4-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:38,830 (pool-4-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:38,835 (pool-4-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:41,838 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:258)] Avro sink null stopping...
+2013-05-09 16:00:41,838 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:41,840 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:41,840 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:41,841 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00dc41c5, /127.0.0.1:41810 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:41,840 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SINK, name: null stopped
+2013-05-09 16:00:41,842 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:264)] Avro sink null stopped. Metrics: SINK:null{sink.connection.closed.count=1, sink.event.drain.attempt=10, sink.batch.underflow=0, sink.connection.failed.count=0, sink.connection.creation.count=1, sink.event.drain.sucess=10, sink.batch.empty=1, sink.batch.complete=5}
+2013-05-09 16:00:41,842 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:41,842 (pool-4-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41810 disconnected.
+2013-05-09 16:00:41,851 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:239)] Starting AvroSink null { host: 127.0.0.1, port: 41414 }...
+2013-05-09 16:00:41,853 (main) [ERROR - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:92)] Failed to register monitored counter group for type: SINK, name: null
+javax.management.InstanceAlreadyExistsException: org.apache.flume.sink:type=null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:467)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.internal_addObject(DefaultMBeanServerInterceptor.java:1520)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:986)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:938)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:330)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:517)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:87)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:67)
+	at org.apache.flume.sink.AvroSink.start(AvroSink.java:240)
+	at org.apache.flume.sink.TestAvroSink.testTimeout(TestAvroSink.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+2013-05-09 16:00:41,854 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: null started
+2013-05-09 16:00:41,854 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:41,855 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:41,861 (pool-5-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:41,867 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:41,868 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41811
+2013-05-09 16:00:41,870 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:41,871 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:253)] Avro sink null started.
+2013-05-09 16:00:41,871 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:41,875 (pool-6-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.appendBatch(TestAvroSink.java:296)] Received event batch:[{"headers": {}, "body": {"bytes": "foo"}}, {"headers": {}, "body": {"bytes": "foo"}}]; delaying for 3000ms
+2013-05-09 16:00:43,874 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:43,880 (main) [INFO - org.apache.flume.sink.TestAvroSink.testTimeout(TestAvroSink.java:161)] Correctly threw due to connect timeout. Exception follows.
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:325)
+	at org.apache.flume.sink.TestAvroSink.testTimeout(TestAvroSink.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 41414 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:236)
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:309)
+	... 31 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 41414 }: Handshake timed out after 2000ms
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:280)
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:224)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:258)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:119)
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:278)
+	... 33 more
+2013-05-09 16:00:43,885 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:43,886 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:43,888 (pool-5-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:43,895 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:43,896 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41812
+2013-05-09 16:00:43,899 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:43,904 (pool-6-thread-2) [DEBUG - org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.appendBatch(TestAvroSink.java:296)] Received event batch:[{"headers": {}, "body": {"bytes": "foo"}}, {"headers": {}, "body": {"bytes": "foo"}}]; delaying for 0ms
+2013-05-09 16:00:43,912 (pool-6-thread-2) [DEBUG - org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.appendBatch(TestAvroSink.java:296)] Received event batch:[{"headers": {}, "body": {"bytes": "foo"}}, {"headers": {}, "body": {"bytes": "foo"}}]; delaying for 4000ms
+2013-05-09 16:00:44,877 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:44,877 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:44,878 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x001827d1, /127.0.0.1:41811 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:44,878 (pool-6-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41811 disconnected.
+2013-05-09 16:00:46,909 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:46,913 (main) [INFO - org.apache.flume.sink.TestAvroSink.testTimeout(TestAvroSink.java:178)] Correctly threw due to request timeout. Exception follows.
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:325)
+	at org.apache.flume.sink.TestAvroSink.testTimeout(TestAvroSink.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 41414 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:236)
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:309)
+	... 31 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 41414 }: RPC request timed out
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:321)
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:295)
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:224)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:132)
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:310)
+	... 34 more
+2013-05-09 16:00:46,917 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:258)] Avro sink null stopping...
+2013-05-09 16:00:46,917 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SINK, name: null stopped
+2013-05-09 16:00:46,918 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:264)] Avro sink null stopped. Metrics: SINK:null{sink.connection.closed.count=2, sink.event.drain.attempt=6, sink.batch.underflow=0, sink.connection.failed.count=0, sink.connection.creation.count=2, sink.event.drain.sucess=2, sink.batch.empty=0, sink.batch.complete=3}
+2013-05-09 16:00:46,919 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:46,925 (pool-6-thread-2) [WARN - org.apache.avro.ipc.Responder.respond(Responder.java:154)] user error
+org.apache.avro.AvroRemoteException: Interrupted while sleeping
+	at org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.sleep(TestAvroSink.java:282)
+	at org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.appendBatch(TestAvroSink.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.avro.ipc.specific.SpecificResponder.respond(SpecificResponder.java:88)
+	at org.apache.avro.ipc.Responder.respond(Responder.java:149)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.messageReceived(NettyServer.java:188)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:75)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:173)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:792)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:321)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:303)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:208)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:94)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:364)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:238)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:38)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.flume.sink.TestAvroSink$DelayMockAvroServer.sleep(TestAvroSink.java:280)
+	... 29 more
+2013-05-09 16:00:46,927 (pool-6-thread-2) [WARN - org.apache.avro.ipc.Responder.respond(Responder.java:172)] system error
+org.apache.avro.AvroRuntimeException: Unknown datum type: org.apache.avro.AvroRemoteException: Interrupted while sleeping
+	at org.apache.avro.generic.GenericData.getSchemaName(GenericData.java:574)
+	at org.apache.avro.generic.GenericData.resolveUnion(GenericData.java:539)
+	at org.apache.avro.generic.GenericDatumWriter.resolveUnion(GenericDatumWriter.java:137)
+	at org.apache.avro.generic.GenericDatumWriter.write(GenericDatumWriter.java:70)
+	at org.apache.avro.generic.GenericDatumWriter.write(GenericDatumWriter.java:57)
+	at org.apache.avro.ipc.specific.SpecificResponder.writeError(SpecificResponder.java:71)
+	at org.apache.avro.ipc.Responder.respond(Responder.java:167)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.messageReceived(NettyServer.java:188)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:75)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:173)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:792)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:321)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:303)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:208)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:94)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:364)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:238)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:38)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:00:46,934 (pool-6-thread-2) [WARN - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.exceptionCaught(NettyServer.java:201)] Unexpected exception from downstream.
+java.nio.channels.ClosedChannelException
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.cleanUpWriteBuffer(AbstractNioWorker.java:673)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.writeFromUserCode(AbstractNioWorker.java:400)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleAcceptedSocket(NioServerSocketPipelineSink.java:120)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:59)
+	at org.jboss.netty.channel.Channels.write(Channels.java:733)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:65)
+	at org.jboss.netty.channel.Channels.write(Channels.java:712)
+	at org.jboss.netty.channel.Channels.write(Channels.java:679)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:245)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.messageReceived(NettyServer.java:192)
+	at org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:173)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:321)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:303)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:208)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:94)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:364)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:238)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:00:46,936 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:46,937 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:46,937 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00b533b8, /127.0.0.1:41812 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:46,938 (pool-6-thread-2) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41812 disconnected.
+2013-05-09 16:00:46,943 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:239)] Starting AvroSink null { host: 127.0.0.1, port: 41414 }...
+2013-05-09 16:00:46,945 (main) [ERROR - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:92)] Failed to register monitored counter group for type: SINK, name: null
+javax.management.InstanceAlreadyExistsException: org.apache.flume.sink:type=null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:467)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.internal_addObject(DefaultMBeanServerInterceptor.java:1520)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:986)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:938)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:330)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:517)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:87)
+	at org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:67)
+	at org.apache.flume.sink.AvroSink.start(AvroSink.java:240)
+	at org.apache.flume.sink.TestAvroSink.testFailedConnect(TestAvroSink.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+2013-05-09 16:00:46,947 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: SINK, name: null started
+2013-05-09 16:00:46,948 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:46,949 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:46,953 (pool-7-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:46,954 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:46,955 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41813
+2013-05-09 16:00:46,954 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:46,957 (main) [INFO - org.apache.flume.sink.AvroSink.start(AvroSink.java:253)] Avro sink null started.
+2013-05-09 16:00:46,957 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [START, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:47,462 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:47,463 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:47,463 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x0143bf3d, /127.0.0.1:41813 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:47,464 (pool-8-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41813 disconnected.
+2013-05-09 16:00:47,970 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:47,973 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:47,974 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:47,979 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:47,980 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:47,985 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:47,986 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:47,991 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:47,992 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:48,004 (main) [INFO - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:178)] Avro sink null: Building RpcClient with hostname: 127.0.0.1, port: 41414
+2013-05-09 16:00:48,006 (main) [DEBUG - org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:420)] Batch size string = 2
+2013-05-09 16:00:48,010 (pool-9-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 => /127.0.0.1:41414] OPEN
+2013-05-09 16:00:48,012 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 => /127.0.0.1:41414] BOUND: /127.0.0.1:41414
+2013-05-09 16:00:48,012 (main) [DEBUG - org.apache.flume.sink.AvroSink.createConnection(AvroSink.java:192)] Avro sink null: Created RpcClient: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:48,013 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 => /127.0.0.1:41414] CONNECTED: /127.0.0.1:41819
+2013-05-09 16:00:48,017 (pool-10-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:48,024 (pool-10-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:48,028 (pool-10-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:48,032 (pool-10-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:48,037 (pool-10-thread-1) [DEBUG - org.apache.flume.sink.TestAvroSink$MockAvroServer.appendBatch(TestAvroSink.java:264)] Received event batch:[{"headers": {}, "body": {"bytes": "test event 1"}}, {"headers": {}, "body": {"bytes": "test event 1"}}]
+2013-05-09 16:00:51,040 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:258)] Avro sink null stopping...
+2013-05-09 16:00:51,041 (main) [DEBUG - org.apache.flume.sink.AvroSink.destroyConnection(AvroSink.java:199)] Avro sink null closing avro client: NettyAvroRpcClient { host: localhost, port: 41414 }
+2013-05-09 16:00:51,046 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 :> /127.0.0.1:41414] DISCONNECTED
+2013-05-09 16:00:51,046 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: SINK, name: null stopped
+2013-05-09 16:00:51,047 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 :> /127.0.0.1:41414] UNBOUND
+2013-05-09 16:00:51,048 (main) [INFO - org.apache.flume.sink.AvroSink.stop(AvroSink.java:264)] Avro sink null stopped. Metrics: SINK:null{sink.connection.closed.count=2, sink.event.drain.attempt=12, sink.batch.underflow=0, sink.connection.failed.count=4, sink.connection.creation.count=2, sink.event.drain.sucess=10, sink.batch.empty=1, sink.batch.complete=6}
+2013-05-09 16:00:51,048 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.handleUpstream(NettyServer.java:171)] [id: 0x00979f67, /127.0.0.1:41819 :> /127.0.0.1:41414] CLOSED
+2013-05-09 16:00:51,049 (main) [DEBUG - org.apache.flume.lifecycle.LifecycleController.waitForOneOf(LifecycleController.java:56)] Waiting for state [STOP, ERROR] for delegate:AvroSink null { host: 127.0.0.1, port: 41414 } up to 5000ms
+2013-05-09 16:00:51,050 (pool-10-thread-1) [INFO - org.apache.avro.ipc.NettyServer$NettyServerAvroHandler.channelClosed(NettyServer.java:209)] Connection to /127.0.0.1:41819 disconnected.

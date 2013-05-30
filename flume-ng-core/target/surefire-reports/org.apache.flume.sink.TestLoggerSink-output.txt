@@ -1,0 +1,10 @@
+2013-05-09 16:01:08,694 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 30                               Test 0 }
+2013-05-09 16:01:08,698 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 31                               Test 1 }
+2013-05-09 16:01:08,699 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 32                               Test 2 }
+2013-05-09 16:01:08,699 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 33                               Test 3 }
+2013-05-09 16:01:08,699 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 34                               Test 4 }
+2013-05-09 16:01:08,700 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 35                               Test 5 }
+2013-05-09 16:01:08,700 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 36                               Test 6 }
+2013-05-09 16:01:08,700 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 37                               Test 7 }
+2013-05-09 16:01:08,700 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 38                               Test 8 }
+2013-05-09 16:01:08,701 (main) [INFO - org.apache.flume.sink.LoggerSink.process(LoggerSink.java:70)] Event: { headers:{} body: 54 65 73 74 20 39                               Test 9 }

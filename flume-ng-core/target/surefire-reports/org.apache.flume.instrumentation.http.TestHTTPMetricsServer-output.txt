@@ -1,0 +1,23 @@
+2013-05-09 16:00:28,341 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: memChannel, registered successfully.
+2013-05-09 16:00:28,346 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: memChannel started
+2013-05-09 16:00:28,347 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: pmemChannel, registered successfully.
+2013-05-09 16:00:28,347 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: pmemChannel started
+2013-05-09 16:00:28,436 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-05-09 16:00:28,438 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] jetty-6.1.26
+2013-05-09 16:00:28,496 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Started SocketConnector@0.0.0.0:5467
+2013-05-09 16:00:29,934 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Stopped SocketConnector@0.0.0.0:5467
+5467test success!
+2013-05-09 16:00:30,039 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] jetty-6.1.26
+2013-05-09 16:00:30,041 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Started SocketConnector@0.0.0.0:33434
+2013-05-09 16:00:31,058 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Stopped SocketConnector@0.0.0.0:33434
+33434test success!
+2013-05-09 16:00:31,159 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] jetty-6.1.26
+2013-05-09 16:00:31,160 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Started SocketConnector@0.0.0.0:44343
+2013-05-09 16:00:32,167 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Stopped SocketConnector@0.0.0.0:44343
+44343test success!
+2013-05-09 16:00:32,269 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] jetty-6.1.26
+2013-05-09 16:00:32,271 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Started SocketConnector@0.0.0.0:41414
+2013-05-09 16:00:33,287 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Stopped SocketConnector@0.0.0.0:41414
+41414test success!
+2013-05-09 16:00:33,390 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: memChannel stopped
+2013-05-09 16:00:33,391 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: pmemChannel stopped

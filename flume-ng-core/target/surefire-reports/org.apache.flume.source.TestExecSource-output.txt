@@ -1,0 +1,28 @@
+2013-05-09 16:01:38,928 (main) [INFO - org.apache.flume.source.ExecSource.start(ExecSource.java:155)] Exec source starting with command:cat /etc/passwd
+2013-05-09 16:01:38,937 (main) [DEBUG - org.apache.flume.source.ExecSource.start(ExecSource.java:173)] Exec source started
+2013-05-09 16:01:38,975 (pool-1-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:307)] Command [cat /etc/passwd] exited with 0
+2013-05-09 16:01:39,977 (main) [INFO - org.apache.flume.source.ExecSource.stop(ExecSource.java:178)] Stopping exec source with command:cat /etc/passwd
+2013-05-09 16:01:39,978 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:185)] Stopping exec runner
+2013-05-09 16:01:39,979 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:187)] Exec runner stopped
+2013-05-09 16:01:39,980 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:193)] Waiting for exec executor service to stop
+2013-05-09 16:01:39,982 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:205)] Exec source with command:cat /etc/passwd stopped. Metrics:{ name:null counters:{exec.lines.read=38} }
+2013-05-09 16:01:40,012 (main) [INFO - org.apache.flume.source.ExecSource.start(ExecSource.java:155)] Exec source starting with command:echo flume
+2013-05-09 16:01:40,013 (main) [DEBUG - org.apache.flume.source.ExecSource.start(ExecSource.java:173)] Exec source started
+2013-05-09 16:01:40,036 (pool-2-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:299)] Restarting in 10ms, exit code 0
+2013-05-09 16:01:40,057 (pool-2-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:299)] Restarting in 10ms, exit code 0
+2013-05-09 16:01:40,076 (pool-2-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:299)] Restarting in 10ms, exit code 0
+2013-05-09 16:01:40,095 (pool-2-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:299)] Restarting in 10ms, exit code 143
+2013-05-09 16:01:40,114 (pool-2-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:299)] Restarting in 10ms, exit code 0
+2013-05-09 16:01:40,115 (main) [INFO - org.apache.flume.source.ExecSource.stop(ExecSource.java:178)] Stopping exec source with command:echo flume
+2013-05-09 16:01:40,122 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:185)] Stopping exec runner
+2013-05-09 16:01:40,123 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:187)] Exec runner stopped
+2013-05-09 16:01:40,124 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:193)] Waiting for exec executor service to stop
+2013-05-09 16:01:40,124 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:205)] Exec source with command:echo flume stopped. Metrics:{ name:null counters:{exec.lines.read=5} }
+2013-05-09 16:01:40,185 (main) [INFO - org.apache.flume.source.ExecSource.start(ExecSource.java:155)] Exec source starting with command:sleep 272
+2013-05-09 16:01:40,186 (main) [DEBUG - org.apache.flume.source.ExecSource.start(ExecSource.java:173)] Exec source started
+2013-05-09 16:01:41,186 (main) [INFO - org.apache.flume.source.ExecSource.stop(ExecSource.java:178)] Stopping exec source with command:sleep 272
+2013-05-09 16:01:41,188 (pool-3-thread-1) [INFO - org.apache.flume.source.ExecSource$ExecRunnable.run(ExecSource.java:307)] Command [sleep 272] exited with 143
+2013-05-09 16:01:41,189 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:185)] Stopping exec runner
+2013-05-09 16:01:41,190 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:187)] Exec runner stopped
+2013-05-09 16:01:41,191 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:193)] Waiting for exec executor service to stop
+2013-05-09 16:01:41,192 (main) [DEBUG - org.apache.flume.source.ExecSource.stop(ExecSource.java:205)] Exec source with command:sleep 272 stopped. Metrics:{ name:null counters:{} }

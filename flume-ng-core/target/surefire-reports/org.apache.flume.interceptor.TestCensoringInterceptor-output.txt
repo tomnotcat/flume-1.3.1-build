@@ -1,0 +1,3 @@
+2013-05-09 16:01:20,673 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: null, registered successfully.
+2013-05-09 16:01:20,679 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: null started
+2013-05-09 16:01:20,804 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: null stopped

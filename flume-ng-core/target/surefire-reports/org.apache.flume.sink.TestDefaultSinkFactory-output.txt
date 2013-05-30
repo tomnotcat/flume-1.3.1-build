@@ -1,0 +1,9 @@
+2013-05-09 16:00:37,625 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: avroSink1, type: avro
+2013-05-09 16:00:37,650 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: avroSink2, type: avro
+2013-05-09 16:00:37,651 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: avroSink1, type: avro
+2013-05-09 16:00:37,652 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: avroSink2, type: avro
+2013-05-09 16:00:37,656 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: null-sink, type: null
+2013-05-09 16:00:37,665 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: logger-sink, type: logger
+2013-05-09 16:00:37,677 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: file-roll-sink, type: file_roll
+2013-05-09 16:00:37,687 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: avro-sink, type: avro
+2013-05-09 16:00:37,689 (main) [INFO - org.apache.flume.sink.DefaultSinkFactory.create(DefaultSinkFactory.java:70)] Creating instance of sink: s1, type: avro

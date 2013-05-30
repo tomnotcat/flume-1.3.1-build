@@ -1,0 +1,18 @@
+2013-05-09 16:01:42,644 (PollableSourceRunner--null) [DEBUG - org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:133)] Polling runner starting. Source:org.apache.flume.source.TestPollableSourceRunner$1@15fadcf
+2013-05-09 16:01:42,653 (PollableSourceRunner--null) [ERROR - org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:89)] Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: I don't like event:[Event headers = {}, body.length = 8 ]
+	at org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:83)
+	at org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:139)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:43,659 (PollableSourceRunner--null) [ERROR - org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:89)] Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: I don't like event:[Event headers = {}, body.length = 8 ]
+	at org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:83)
+	at org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:139)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:44,665 (PollableSourceRunner--null) [ERROR - org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:89)] Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: I don't like event:[Event headers = {}, body.length = 7 ]
+	at org.apache.flume.source.TestPollableSourceRunner$1.process(TestPollableSourceRunner.java:83)
+	at org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:139)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:44,666 (PollableSourceRunner--null) [INFO - org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:149)] Source runner interrupted. Exiting
+2013-05-09 16:01:44,673 (PollableSourceRunner--null) [DEBUG - org.apache.flume.source.PollableSourceRunner$PollingRunner.run(PollableSourceRunner.java:166)] Polling runner exiting. Metrics:{ name:null counters:{runner.backoffs.consecutive=1, runner.polls=50, runner.backoffs=3, runner.interruptions=1} }

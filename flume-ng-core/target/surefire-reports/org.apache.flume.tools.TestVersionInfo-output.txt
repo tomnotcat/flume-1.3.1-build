@@ -1,0 +1,5 @@
+2013-05-09 16:02:29,289 (main) [DEBUG - org.apache.flume.tools.TestVersionInfo.testVersionInfoUnknown(TestVersionInfo.java:38)] Flume 1.3.1
+2013-05-09 16:02:29,294 (main) [DEBUG - org.apache.flume.tools.TestVersionInfo.testVersionInfoUnknown(TestVersionInfo.java:39)] Subversion file:///home/tomnotcat/open-source/flume/apache-flume-1.3.1-bin -r Unknown
+2013-05-09 16:02:29,294 (main) [DEBUG - org.apache.flume.tools.TestVersionInfo.testVersionInfoUnknown(TestVersionInfo.java:40)] Compiled by tomnotcat on Thu May  9 15:59:36 CST 2013
+2013-05-09 16:02:29,295 (main) [DEBUG - org.apache.flume.tools.TestVersionInfo.testVersionInfoUnknown(TestVersionInfo.java:41)] From source with checksum b0d64e5e09f5253ee4103d82a264f226
+2013-05-09 16:02:29,295 (main) [DEBUG - org.apache.flume.tools.TestVersionInfo.testVersionInfoUnknown(TestVersionInfo.java:42)] Flume 1.3.1 from Unknown by tomnotcat on Thu May  9 15:59:36 CST 2013 source checksum b0d64e5e09f5253ee4103d82a264f226

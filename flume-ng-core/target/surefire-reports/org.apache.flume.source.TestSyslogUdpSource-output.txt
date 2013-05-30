@@ -1,0 +1,4 @@
+2013-05-09 16:01:37,788 (main) [INFO - org.apache.flume.source.TestSyslogUdpSource.testAppend(TestSyslogUdpSource.java:78)] test flume syslog
+2013-05-09 16:01:37,800 (main) [INFO - org.apache.flume.source.TestSyslogUdpSource.testAppend(TestSyslogUdpSource.java:79)] 
+2013-05-09 16:01:37,816 (main) [INFO - org.apache.flume.source.SyslogUDPSource.stop(SyslogUDPSource.java:111)] Syslog UDP Source stopping...
+2013-05-09 16:01:37,819 (main) [INFO - org.apache.flume.source.SyslogUDPSource.stop(SyslogUDPSource.java:112)] Metrics:{ name:null counters:{events.success=2} }

@@ -1,0 +1,4 @@
+2013-05-09 16:00:05,955 (main) [WARN - org.apache.flume.channel.MemoryChannel.resizeQueue(MemoryChannel.java:323)] Couldn't acquire permits to downsize the queue, resizing has been aborted
+2013-05-09 16:00:18,030 (main) [WARN - org.apache.flume.channel.MemoryChannel.configure(MemoryChannel.java:298)] Couldn't acquire permits to downsize the byte capacity, resizing has been aborted
+2013-05-09 16:00:27,041 (main) [WARN - org.apache.flume.channel.MemoryChannel.configure(MemoryChannel.java:233)] Invalid capacity specified, initializing channel to default capacity of 100
+2013-05-09 16:00:27,043 (main) [WARN - org.apache.flume.channel.MemoryChannel.configure(MemoryChannel.java:246)] Invalid transation capacity specified, initializing channel to default capacity of 100

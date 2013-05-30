@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flume.lifecycle.TestLifecycleSupervisor
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.65 sec

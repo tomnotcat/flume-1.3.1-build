@@ -1,0 +1,3 @@
+2013-05-09 16:01:21,434 (main) [INFO - org.apache.flume.interceptor.RegexFilteringInterceptor$Builder.build(RegexFilteringInterceptor.java:160)] Creating RegexFilteringInterceptor: regex=.*,excludeEvents=false
+2013-05-09 16:01:21,444 (main) [INFO - org.apache.flume.interceptor.RegexFilteringInterceptor$Builder.build(RegexFilteringInterceptor.java:160)] Creating RegexFilteringInterceptor: regex=(INFO.*)|(WARNING.*),excludeEvents=false
+2013-05-09 16:01:21,445 (main) [INFO - org.apache.flume.interceptor.RegexFilteringInterceptor$Builder.build(RegexFilteringInterceptor.java:160)] Creating RegexFilteringInterceptor: regex=.*DEBUG.*,excludeEvents=true

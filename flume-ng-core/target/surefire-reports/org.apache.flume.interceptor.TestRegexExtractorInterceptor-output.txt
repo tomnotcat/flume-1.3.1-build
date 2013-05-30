@@ -1,0 +1,8 @@
+2013-05-09 16:01:21,891 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing Num1 using org.apache.flume.interceptor.RegexExtractorInterceptorPassThroughSerializer@288051
+2013-05-09 16:01:21,895 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing Num2 using org.apache.flume.interceptor.RegexExtractorInterceptorPassThroughSerializer@288051
+2013-05-09 16:01:21,896 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing Num3 using org.apache.flume.interceptor.RegexExtractorInterceptorPassThroughSerializer@288051
+2013-05-09 16:01:21,898 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing timestamp using org.apache.flume.interceptor.RegexExtractorInterceptorPassThroughSerializer@4a6cbf
+2013-05-09 16:01:21,899 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:137)] Skipping group 1 to 2 due to missing serializer
+2013-05-09 16:01:00,000
+2013-05-09 16:01:21,978 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing timestamp using org.apache.flume.interceptor.RegexExtractorInterceptorMillisSerializer@949f69
+2013-05-09 16:01:21,985 (main) [DEBUG - org.apache.flume.interceptor.RegexExtractorInterceptor.intercept(RegexExtractorInterceptor.java:144)] Serializing data using org.apache.flume.interceptor.RegexExtractorInterceptorPassThroughSerializer@bc8e1e

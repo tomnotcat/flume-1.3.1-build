@@ -1,0 +1,10 @@
+Escaped String: Sat Jun 23 12:00:00 2012
+Expected String: Sat Jun 23 12:00:00 2012
+Escaped String: 1340430300
+Expected String: 1340430300
+Escaped String: 1340430390
+Expected String: 1340430390
+Escaped String: Sat Jun 23 13:46:33 2012
+Expected String: Sat Jun 23 13:46:33 2012
+Escaped String: Sat Jun 23 05:46:33 2012
+Expected String: Sat Jun 23 05:46:33 2012

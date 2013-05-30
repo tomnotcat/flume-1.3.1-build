@@ -1,0 +1,8 @@
+2013-05-09 16:01:49,480 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,485 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,489 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,490 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,492 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,492 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.
+2013-05-09 16:01:49,496 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:217)] Event size larger than specified event size: 10. You should consider increasing your event size.
+2013-05-09 16:01:49,497 (main) [WARN - org.apache.flume.source.SyslogUtils.buildEvent(SyslogUtils.java:214)] Event created from Invalid Syslog data.

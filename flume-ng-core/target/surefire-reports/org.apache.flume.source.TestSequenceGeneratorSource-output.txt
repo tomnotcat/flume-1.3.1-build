@@ -1,0 +1,8 @@
+2013-05-09 16:01:45,471 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.start(SequenceGeneratorSource.java:87)] Sequence generator source starting
+2013-05-09 16:01:45,476 (main) [DEBUG - org.apache.flume.source.SequenceGeneratorSource.start(SequenceGeneratorSource.java:91)] Sequence generator source started
+2013-05-09 16:01:45,512 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.stop(SequenceGeneratorSource.java:96)] Sequence generator source stopping
+2013-05-09 16:01:45,514 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.stop(SequenceGeneratorSource.java:100)] Sequence generator source stopped. Metrics:{ name:null counters:{events.successful=100} }
+2013-05-09 16:01:45,515 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.start(SequenceGeneratorSource.java:87)] Sequence generator source starting
+2013-05-09 16:01:45,516 (main) [DEBUG - org.apache.flume.source.SequenceGeneratorSource.start(SequenceGeneratorSource.java:91)] Sequence generator source started
+2013-05-09 16:01:45,520 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.stop(SequenceGeneratorSource.java:96)] Sequence generator source stopping
+2013-05-09 16:01:45,521 (main) [INFO - org.apache.flume.source.SequenceGeneratorSource.stop(SequenceGeneratorSource.java:100)] Sequence generator source stopped. Metrics:{ name:null counters:{events.successful=100} }

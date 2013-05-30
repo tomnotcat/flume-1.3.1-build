@@ -1,0 +1,170 @@
+2013-05-09 16:01:26,220 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: null, registered successfully.
+2013-05-09 16:01:26,226 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: null started
+2013-05-09 16:01:26,350 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-05-09 16:01:26,424 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] jetty-6.1.26
+2013-05-09 16:01:26,471 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Started SocketConnector@0.0.0.0:41404
+2013-05-09 16:01:27,277 (21607056@qtp-1281123-0) [DEBUG - org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:99)] Charset is null, default charset of UTF-8 will be used.
+2013-05-09 16:01:27,373 (21607056@qtp-1281123-0) [DEBUG - org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:99)] Charset is null, default charset of UTF-8 will be used.
+2013-05-09 16:01:27,377 (21607056@qtp-1281123-0) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:166)] Received bad request from client. 
+org.apache.flume.source.http.HTTPBadRequestException: Request has invalid JSON Syntax.
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:119)
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:164)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected name at line 1 column 12
+	at com.google.gson.Gson.fromJson(Gson.java:809)
+	at com.google.gson.Gson.fromJson(Gson.java:761)
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:117)
+	... 16 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected name at line 1 column 12
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.nextInObject(JsonReader.java:739)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:382)
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:349)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:81)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:60)
+	at com.google.gson.Gson.fromJson(Gson.java:795)
+	... 18 more
+2013-05-09 16:01:30,484 (26564976@qtp-1281123-4) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:166)] Received bad request from client. 
+org.apache.flume.source.http.HTTPBadRequestException: Request has invalid JSON Syntax.
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:119)
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:164)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was STRING at line 1 column 6560
+	at com.google.gson.Gson.fromJson(Gson.java:806)
+	at com.google.gson.Gson.fromJson(Gson.java:761)
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:117)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was STRING at line 1 column 6560
+	at com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:306)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:60)
+	at com.google.gson.Gson.fromJson(Gson.java:795)
+	... 18 more
+2013-05-09 16:01:33,538 (11555382@qtp-1281123-5) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:166)] Received bad request from client. 
+org.apache.flume.source.http.HTTPBadRequestException: Request has invalid JSON Syntax.
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:119)
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:164)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was STRING at line 1 column 6077
+	at com.google.gson.Gson.fromJson(Gson.java:806)
+	at com.google.gson.Gson.fromJson(Gson.java:761)
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:117)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was STRING at line 1 column 6077
+	at com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:306)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:60)
+	at com.google.gson.Gson.fromJson(Gson.java:795)
+	... 18 more
+2013-05-09 16:01:36,566 (19714461@qtp-1281123-6) [DEBUG - org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:99)] Charset is null, default charset of UTF-8 will be used.
+2013-05-09 16:01:36,624 (5474676@qtp-1281123-7) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:181)] Error appending event to channel. Channel might be full. Consider increasing the channelcapacity or make sure the sinks perform faster.
+org.apache.flume.ChannelException: Unable to put batch on required channel: org.apache.flume.channel.MemoryChannel{name: null}
+	at org.apache.flume.channel.ChannelProcessor.processEventBatch(ChannelProcessor.java:200)
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:179)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: org.apache.flume.ChannelException: Put queue for MemoryTransaction of capacity 100 full, consider committing more frequently, increasing capacity or increasing thread count
+	at org.apache.flume.channel.MemoryChannel$MemoryTransaction.doPut(MemoryChannel.java:82)
+	at org.apache.flume.channel.BasicTransactionSemantics.put(BasicTransactionSemantics.java:93)
+	at org.apache.flume.channel.BasicChannelSemantics.put(BasicChannelSemantics.java:80)
+	at org.apache.flume.channel.ChannelProcessor.processEventBatch(ChannelProcessor.java:189)
+	... 16 more
+2013-05-09 16:01:36,640 (19396509@qtp-1281123-8) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:172)] Deserializer threw unexpected exception. 
+java.lang.NullPointerException
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:164)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2013-05-09 16:01:36,664 (6141358@qtp-1281123-9) [ERROR - org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:104)] Unsupported character set in request ISO-8859-1. JSON handler supports UTF-8, UTF-16 and UTF-32 only.
+2013-05-09 16:01:36,664 (6141358@qtp-1281123-9) [WARN - org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:172)] Deserializer threw unexpected exception. 
+java.nio.charset.UnsupportedCharsetException: JSON handler supports UTF-8, UTF-16 and UTF-32 only.
+	at org.apache.flume.source.http.JSONHandler.getEvents(JSONHandler.java:107)
+	at org.apache.flume.source.http.HTTPSource$FlumeHTTPServlet.doPost(HTTPSource.java:164)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2013-05-09 16:01:36,666 (main) [INFO - org.mortbay.log.Slf4jLog.info(Slf4jLog.java:67)] Stopped SocketConnector@0.0.0.0:41404
+2013-05-09 16:01:36,771 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: null stopped

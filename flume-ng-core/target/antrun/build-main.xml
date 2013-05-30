@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="/home/tomnotcat/open-source/flume/apache-flume-1.3.1-bin/flume-ng-core/target/generated-sources/java"/>
+  <exec executable="sh">
+    <arg line="/home/tomnotcat/open-source/flume/apache-flume-1.3.1-bin/flume-ng-core/scripts/saveVersion.sh 1.3.1 /home/tomnotcat/open-source/flume/apache-flume-1.3.1-bin/flume-ng-core/target"/>
+  </exec>
+</target>
+</project>

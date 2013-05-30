@@ -1,0 +1,27 @@
+2013-05-09 16:01:01,987 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:89)] Monitoried counter group for type: CHANNEL, name: null, registered successfully.
+2013-05-09 16:01:01,992 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:73)] Component type: CHANNEL, name: null started
+2013-05-09 16:01:02,050 (main) [DEBUG - org.apache.flume.sink.SinkProcessorFactory.getProcessor(SinkProcessorFactory.java:77)] Creating instance of sink processor type failover, class org.apache.flume.sink.FailoverSinkProcessor
+2013-05-09 16:01:02,072 (SinkRunner-PollingRunner-FailoverSinkProcessor) [DEBUG - org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:143)] Polling sink runner starting
+2013-05-09 16:01:02,083 (SinkRunner-PollingRunner-FailoverSinkProcessor) [WARN - org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185)] Sink s1 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: can't consume more
+	at org.apache.flume.sink.TestFailoverSinkProcessor$ConsumeXSink.process(TestFailoverSinkProcessor.java:99)
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:182)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:147)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:02,191 (SinkRunner-PollingRunner-FailoverSinkProcessor) [WARN - org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185)] Sink s2 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: can't consume more
+	at org.apache.flume.sink.TestFailoverSinkProcessor$ConsumeXSink.process(TestFailoverSinkProcessor.java:99)
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:182)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:147)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:05,193 (SinkRunner-PollingRunner-FailoverSinkProcessor) [DEBUG - org.apache.flume.sink.FailoverSinkProcessor$FailedSink.incFails(FailoverSinkProcessor.java:97)] Sink s1 failed again, new refresh is at 1368086469193, current time 1368086465193
+2013-05-09 16:01:07,292 (SinkRunner-PollingRunner-FailoverSinkProcessor) [DEBUG - org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:166)] Sink s2 was recovered from the fail list
+2013-05-09 16:01:07,295 (SinkRunner-PollingRunner-FailoverSinkProcessor) [WARN - org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185)] Sink s2 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: can't consume more
+	at org.apache.flume.sink.TestFailoverSinkProcessor$ConsumeXSink.process(TestFailoverSinkProcessor.java:99)
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:182)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:147)
+	at java.lang.Thread.run(Thread.java:679)
+2013-05-09 16:01:08,305 (main) [DEBUG - org.apache.flume.SinkRunner.stop(SinkRunner.java:104)] Waiting for runner thread to exit
+2013-05-09 16:01:08,305 (SinkRunner-PollingRunner-FailoverSinkProcessor) [DEBUG - org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:173)] Polling runner exiting. Metrics:{ name:null counters:{runner.backoffs.consecutive=0} }
+2013-05-09 16:01:08,307 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:100)] Component type: CHANNEL, name: null stopped
